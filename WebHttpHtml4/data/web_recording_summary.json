@@ -1,0 +1,305 @@
+{
+  "FilterHeaders": [
+    {
+      "Header": "user-agent",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "upgrade-insecure-requests",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "origin",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "cache-control",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept-language",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept-encoding",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept",
+      "IncludeInScript": false
+    }
+  ],
+  "FilterResources": [
+    {
+      "IsNonResource": true,
+      "type": "text/html"
+    }
+  ],
+  "GeneralInfo": {
+    "BrowserVersion": "",
+    "MaxUsedConnections": 9,
+    "RecordedBrowser": "Chrome",
+    "RecordingDate": "Р В°Р С—РЎР‚-26-2025",
+    "RecordingDuration": 32250,
+    "RecordingTimeStamp": 1745661420,
+    "TotalBytesReceived": 87939,
+    "TotalBytesSent": 5982,
+    "TotalRequests": 9
+  },
+  "HostInfo": [
+    {
+      "DomainName": "gstatic.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.186.67",
+          "IncludeInScript": false,
+          "Name": "www.gstatic.com",
+          "Port": 80,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 0,
+              "EventId": 70,
+              "HttpStatus": 204,
+              "Size": 0,
+              "URL": "http://www.gstatic.com/generate_204"
+            }
+          ],
+          "SSLCipher": "None",
+          "SSLVersion": "None"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "192.168.1.1",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "192.168.1.1",
+          "IncludeInScript": false,
+          "Name": "192.168.1.1",
+          "Port": 80,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 16,
+              "EventId": 66,
+              "HttpStatus": 200,
+              "Size": 155,
+              "URL": "http://192.168.1.1/cgi-bin/luci/;stok=/domain_login?form=dlogin"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 62,
+              "HttpStatus": 200,
+              "Size": 89,
+              "URL": "http://192.168.1.1/cgi-bin/luci/;stok=/login?form=get_deviceInfo"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 58,
+              "HttpStatus": 200,
+              "Size": 48,
+              "URL": "http://192.168.1.1/cgi-bin/luci/;stok=/login?form=initial_login"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 15,
+              "EventId": 54,
+              "HttpStatus": 200,
+              "Size": 68,
+              "URL": "http://192.168.1.1/cgi-bin/luci/;stok=/login?form=check_factory_default"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 15,
+              "EventId": 50,
+              "HttpStatus": 200,
+              "Size": 320,
+              "URL": "http://192.168.1.1/cgi-bin/luci/;stok=/login?form=login"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 46,
+              "HttpStatus": 200,
+              "Size": 320,
+              "URL": "http://192.168.1.1/cgi-bin/luci/;stok=/login?form=cloud_login"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 42,
+              "HttpStatus": 200,
+              "Size": 124,
+              "URL": "http://192.168.1.1/cgi-bin/luci/;stok=/locale?form=list"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 38,
+              "HttpStatus": 200,
+              "Size": 44,
+              "URL": "http://192.168.1.1/cgi-bin/luci/;stok=/login?form=password"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/javascript",
+              "DownloadTime": 15,
+              "EventId": 34,
+              "HttpStatus": 200,
+              "Size": 2639,
+              "URL": "http://192.168.1.1/webpages/locale/language.js?_=1745661426376"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/javascript",
+              "DownloadTime": 0,
+              "EventId": 30,
+              "HttpStatus": 200,
+              "Size": 342598,
+              "URL": "http://192.168.1.1/webpages/locale/ru_RU/help.js?t=1536549412497&_=1745661426375"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/javascript",
+              "DownloadTime": 0,
+              "EventId": 26,
+              "HttpStatus": 200,
+              "Size": 187802,
+              "URL": "http://192.168.1.1/webpages/locale/ru_RU/lan.js?t=1536549412497&_=1745661426374"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 18,
+              "HttpStatus": 200,
+              "Size": 124,
+              "URL": "http://192.168.1.1/cgi-bin/luci/;stok=/locale?form=lang"
+            }
+          ],
+          "SSLCipher": "None",
+          "SSLVersion": "None"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "192.168.0.138",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "192.168.0.138",
+          "IncludeInScript": true,
+          "Name": "192.168.0.138",
+          "Port": 23232,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 16,
+              "EventId": 84,
+              "HttpStatus": 200,
+              "Size": 12123,
+              "URL": "http://192.168.0.138:23232/"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 0,
+              "EventId": 80,
+              "HttpStatus": 200,
+              "Size": 8645,
+              "URL": "http://192.168.0.138:23232/login/?next=/"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 15,
+              "EventId": 76,
+              "HttpStatus": 200,
+              "Size": 12123,
+              "URL": "http://192.168.0.138:23232/"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 0,
+              "EventId": 73,
+              "HttpStatus": 302,
+              "Size": 0,
+              "URL": "http://192.168.0.138:23232/login/"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 15,
+              "EventId": 22,
+              "HttpStatus": 200,
+              "Size": 6064,
+              "URL": "http://192.168.0.138:23232/login/?next=/"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 16,
+              "EventId": 14,
+              "HttpStatus": 200,
+              "Size": 12123,
+              "URL": "http://192.168.0.138:23232/"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 0,
+              "EventId": 10,
+              "HttpStatus": 404,
+              "Size": 12615,
+              "URL": "http://192.168.0.138:23232/favicon.ico"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 15,
+              "EventId": 6,
+              "HttpStatus": 200,
+              "Size": 12123,
+              "URL": "http://192.168.0.138:23232/"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 0,
+              "EventId": 2,
+              "HttpStatus": 200,
+              "Size": 12123,
+              "URL": "http://192.168.0.138:23232/"
+            }
+          ],
+          "SSLCipher": "None",
+          "SSLVersion": "None"
+        }
+      ],
+      "IncludeInScript": true
+    }
+  ],
+  "WebSocket": {
+    "IncludeInScript": false,
+    "IsScriptIncludeWebSocket": false
+  },
+  "NumberOfCorrelations": 0
+}

@@ -1,0 +1,13 @@
+[t9]
+FileName1=t9.html
+URL1=http://update.googleapis.com/service/update2/json?cup2key=14:IYEqcFZ_Srnbv5SK66FoCQc00dpmPydVbES_U__S_wQ&cup2hreq=bb5636500b977b321bff8d1be1589536cf95471b989f5251abf4ddfc940fa5e6
+Total=2
+RequestHeaderFile=t9_RequestHeader.txt
+RequestBodyFile=t9_RequestBody.txt
+ResponseHeaderFile=t9_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_9.xml
+FileName2=t9_bce39b06df543968b131187989c96ac5953e83e64a53ded2c59ba4e235dbbccb.html
+URL2=http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/gcmjkmgdlgnkkcocmoeiminaijmmjnii/bce39b06df543968b131187989c96ac5953e83e64a53ded2c59ba4e235dbbccb
+[ProtocolInfo]
+ProtocolId=QTWeb

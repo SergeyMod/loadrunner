@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+<head>
+<title>user2815 | Change user | Django site admin</title>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/base.css">
+
+  <link rel="stylesheet" type="text/css" href="/static/admin/css/nav_sidebar.css">
+  <script src="/static/admin/js/nav_sidebar.js" defer></script>
+
+<link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css">
+
+
+<script src="/admin/jsi18n/"></script>
+<script src="/static/admin/js/vendor/jquery/jquery.js"></script>
+<script src="/static/admin/js/calendar.js"></script>
+<script src="/static/admin/js/jquery.init.js"></script>
+<script src="/static/admin/js/admin/DateTimeShortcuts.js"></script>
+<script src="/static/admin/js/core.js"></script>
+<script src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+<script src="/static/admin/js/SelectBox.js"></script>
+<script src="/static/admin/js/actions.js"></script>
+<script src="/static/admin/js/SelectFilter2.js"></script>
+<script src="/static/admin/js/urlify.js"></script>
+<script src="/static/admin/js/prepopulate.js"></script>
+<script src="/static/admin/js/vendor/xregexp/xregexp.js"></script>
+
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/responsive.css">
+    
+
+<meta name="robots" content="NONE,NOARCHIVE">
+</head>
+
+
+<body class=" app-auth model-user change-form"
+  data-admin-utc-offset="0">
+
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<h1 id="site-name"><a href="/admin/">Django administration</a></h1>
+
+        </div>
+        
+        
+        <div id="user-tools">
+            
+                Welcome,
+                <strong>admin</strong>.
+            
+            
+                
+                    <a href="/">View site</a> /
+                
+                
+                    
+                    
+                
+                
+                <a href="/admin/password_change/">Change password</a> /
+                
+                <a href="/admin/logout/">Log out</a>
+            
+        </div>
+        
+        
+        
+    </div>
+    <!-- END Header -->
+    
+<div class="breadcrumbs">
+<a href="/admin/">Home</a>
+&rsaquo; <a href="/admin/auth/">Authentication and Authorization</a>
+&rsaquo; <a href="/admin/auth/user/">Users</a>
+&rsaquo; user2815
+</div>
+
+    
+
+    <div class="main shifted" id="main">
+      
+        
+          
+<button class="sticky toggle-nav-sidebar" id="toggle-nav-sidebar" aria-label="Toggle navigation"></button>
+<nav class="sticky" id="nav-sidebar">
+  
+
+
+  
+    <div class="app-account module">
+      <table>
+        <caption>
+          <a href="/admin/account/" class="section" title="Models in the Account application">Account</a>
+        </caption>
+        
+          <tr class="model-accountdeletion">
+            
+              <th scope="row"><a href="/admin/account/accountdeletion/">Account deletions</a></th>
+            
+
+            
+              <td><a href="/admin/account/accountdeletion/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-account">
+            
+              <th scope="row"><a href="/admin/account/account/">Accounts</a></th>
+            
+
+            
+              <td><a href="/admin/account/account/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-emailaddress">
+            
+              <th scope="row"><a href="/admin/account/emailaddress/">Email addresses</a></th>
+            
+
+            
+              <td><a href="/admin/account/emailaddress/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-passwordexpiry">
+            
+              <th scope="row"><a href="/admin/account/passwordexpiry/">Password expirys</a></th>
+            
+
+            
+              <td><a href="/admin/account/passwordexpiry/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-passwordhistory">
+            
+              <th scope="row"><a href="/admin/account/passwordhistory/">Password histories</a></th>
+            
+
+            
+              <td><a href="/admin/account/passwordhistory/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-signupcode">
+            
+              <th scope="row"><a href="/admin/account/signupcode/">Signup codes</a></th>
+            
+
+            
+              <td><a href="/admin/account/signupcode/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </table>
+    </div>
+  
+    <div class="app-auth module current-app">
+      <table>
+        <caption>
+          <a href="/admin/auth/" class="section" title="Models in the Authentication and Authorization application">Authentication and Authorization</a>
+        </caption>
+        
+          <tr class="model-group">
+            
+              <th scope="row"><a href="/admin/auth/group/">Groups</a></th>
+            
+
+            
+              <td><a href="/admin/auth/group/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-user current-model">
+            
+              <th scope="row"><a href="/admin/auth/user/" aria-current="page">Users</a></th>
+            
+
+            
+              <td><a href="/admin/auth/user/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </table>
+    </div>
+  
+    <div class="app-helpdesk module">
+      <table>
+        <caption>
+          <a href="/admin/helpdesk/" class="section" title="Models in the Helpdesk application">Helpdesk</a>
+        </caption>
+        
+          <tr class="model-customfield">
+            
+              <th scope="row"><a href="/admin/helpdesk/customfield/">Custom fields</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/customfield/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-emailtemplate">
+            
+              <th scope="row"><a href="/admin/helpdesk/emailtemplate/">E-mail templates</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/emailtemplate/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-escalationexclusion">
+            
+              <th scope="row"><a href="/admin/helpdesk/escalationexclusion/">Escalation exclusions</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/escalationexclusion/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-followup">
+            
+              <th scope="row"><a href="/admin/helpdesk/followup/">Follow-ups</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/followup/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-ignoreemail">
+            
+              <th scope="row"><a href="/admin/helpdesk/ignoreemail/">Ignored e-mail addresses</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/ignoreemail/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-kbcategory">
+            
+              <th scope="row"><a href="/admin/helpdesk/kbcategory/">Knowledge base categories</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/kbcategory/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-kbitem">
+            
+              <th scope="row"><a href="/admin/helpdesk/kbitem/">Knowledge base items</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/kbitem/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-presetreply">
+            
+              <th scope="row"><a href="/admin/helpdesk/presetreply/">Pre-set replies</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/presetreply/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-queue">
+            
+              <th scope="row"><a href="/admin/helpdesk/queue/">Queues</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/queue/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-ticket">
+            
+              <th scope="row"><a href="/admin/helpdesk/ticket/">Tickets</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/ticket/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </table>
+    </div>
+  
+    <div class="app-pinax_invitations module">
+      <table>
+        <caption>
+          <a href="/admin/pinax_invitations/" class="section" title="Models in the Pinax Invitations application">Pinax Invitations</a>
+        </caption>
+        
+          <tr class="model-invitationstat">
+            
+              <th scope="row"><a href="/admin/pinax_invitations/invitationstat/">Invitation stats</a></th>
+            
+
+            
+              <td><a href="/admin/pinax_invitations/invitationstat/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-joininvitation">
+            
+              <th scope="row"><a href="/admin/pinax_invitations/joininvitation/">Join invitations</a></th>
+            
+
+            
+              <td><a href="/admin/pinax_invitations/joininvitation/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </table>
+    </div>
+  
+    <div class="app-pinax_teams module">
+      <table>
+        <caption>
+          <a href="/admin/pinax_teams/" class="section" title="Models in the Pinax Teams application">Pinax Teams</a>
+        </caption>
+        
+          <tr class="model-membership">
+            
+              <th scope="row"><a href="/admin/pinax_teams/membership/">Memberships</a></th>
+            
+
+            
+              <td><a href="/admin/pinax_teams/membership/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-team">
+            
+              <th scope="row"><a href="/admin/pinax_teams/team/">Teams</a></th>
+            
+
+            
+              <td><a href="/admin/pinax_teams/team/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </table>
+    </div>
+  
+    <div class="app-sites module">
+      <table>
+        <caption>
+          <a href="/admin/sites/" class="section" title="Models in the Sites application">Sites</a>
+        </caption>
+        
+          <tr class="model-site">
+            
+              <th scope="row"><a href="/admin/sites/site/">Sites</a></th>
+            
+
+            
+              <td><a href="/admin/sites/site/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </table>
+    </div>
+  
+
+
+</nav>
+
+        
+      
+      <div class="content">
+        
+          
+            <ul class="messagelist">
+              <li class="success">The user “<a href="/admin/auth/user/20/change/">user2815</a>” was added successfully. You may edit it again below.</li>
+            </ul>
+          
+        
+        <!-- Content -->
+        <div id="content" class="colM">
+          
+          <h1>Change user</h1>
+          <h2>user2815</h2>
+          <div id="content-main">
+
+
+  <ul class="object-tools">
+    
+      
+
+<li>
+    
+    <a href="/admin/auth/user/20/history/" class="historylink">History</a>
+</li>
+
+
+
+    
+  </ul>
+
+
+<form method="post" id="user_form" novalidate><input type="hidden" name="csrfmiddlewaretoken" value="2LPSozwLDajpafuRsFkfZ5vQABvNCMIJEZIH5Ip8T6r5OYL6pV39eeP1xmDjvLsX">
+<div>
+
+
+
+
+
+
+
+  <fieldset class="module aligned ">
+    
+    
+    
+        <div class="form-row field-username">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_username">Username:</label>
+                        
+                            <input type="text" name="username" value="user2815" class="vTextField" maxlength="150" autocapitalize="none" autocomplete="username" required id="id_username">
+                        
+                    
+                    
+                        <div class="help">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</div>
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-password">
+            
+            
+                <div>
+                    
+                    
+                        <label for="id_password">Password:</label>
+                        
+                            <div disabled id="id_password">
+
+<strong>algorithm</strong>: pbkdf2_sha256
+
+<strong>iterations</strong>: 260000
+
+<strong>salt</strong>: cAPBch****************
+
+<strong>hash</strong>: BBwvoA**************************************
+
+</div>
+                        
+                    
+                    
+                        <div class="help">Raw passwords are not stored, so there is no way to see this user’s password, but you can change the password using <a href="../password/">this form</a>.</div>
+                    
+                </div>
+            
+        </div>
+    
+</fieldset>
+
+
+  <fieldset class="module aligned ">
+    <h2>Personal info</h2>
+    
+    
+        <div class="form-row field-first_name">
+            
+            
+                <div>
+                    
+                    
+                        <label for="id_first_name">First name:</label>
+                        
+                            <input type="text" name="first_name" class="vTextField" maxlength="150" id="id_first_name">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-last_name">
+            
+            
+                <div>
+                    
+                    
+                        <label for="id_last_name">Last name:</label>
+                        
+                            <input type="text" name="last_name" class="vTextField" maxlength="150" id="id_last_name">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-email">
+            
+            
+                <div>
+                    
+                    
+                        <label for="id_email">Email address:</label>
+                        
+                            <input type="email" name="email" class="vTextField" maxlength="254" id="id_email">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+</fieldset>
+
+
+  <fieldset class="module aligned ">
+    <h2>Permissions</h2>
+    
+    
+        <div class="form-row field-is_active">
+            
+            
+                <div class="checkbox-row">
+                    
+                    
+                        <input type="checkbox" name="is_active" id="id_is_active" checked><label class="vCheckboxLabel" for="id_is_active">Active</label>
+                    
+                    
+                        <div class="help">Designates whether this user should be treated as active. Unselect this instead of deleting accounts.</div>
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-is_staff">
+            
+            
+                <div class="checkbox-row">
+                    
+                    
+                        <input type="checkbox" name="is_staff" id="id_is_staff"><label class="vCheckboxLabel" for="id_is_staff">Staff status</label>
+                    
+                    
+                        <div class="help">Designates whether the user can log into this admin site.</div>
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-is_superuser">
+            
+            
+                <div class="checkbox-row">
+                    
+                    
+                        <input type="checkbox" name="is_superuser" id="id_is_superuser"><label class="vCheckboxLabel" for="id_is_superuser">Superuser status</label>
+                    
+                    
+                        <div class="help">Designates that this user has all permissions without explicitly assigning them.</div>
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-groups">
+            
+            
+                <div>
+                    
+                    
+                        <label for="id_groups">Groups:</label>
+                        
+                            <div class="related-widget-wrapper">
+    <select name="groups" id="id_groups" multiple class="selectfilter" data-field-name="groups" data-is-stacked="0">
+</select>
+    
+        <a class="related-widget-wrapper-link add-related" id="add_id_groups"
+            href="/admin/auth/group/add/?_to_field=id&amp;_popup=1"
+            title="Add another group"><img src="/static/admin/img/icon-addlink.svg" alt="Add"></a>
+    
+</div>
+                        
+                    
+                    
+                        <div class="help">The groups this user belongs to. A user will get all permissions granted to each of their groups. Hold down “Control”, or “Command” on a Mac, to select more than one.</div>
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-user_permissions">
+            
+            
+                <div>
+                    
+                    
+                        <label for="id_user_permissions">User permissions:</label>
+                        
+                            <div class="related-widget-wrapper">
+    <select name="user_permissions" id="id_user_permissions" multiple class="selectfilter" data-field-name="user permissions" data-is-stacked="0">
+  <option value="29">account | account | Can add account</option>
+
+  <option value="30">account | account | Can change account</option>
+
+  <option value="31">account | account | Can delete account</option>
+
+  <option value="32">account | account | Can view account</option>
+
+  <option value="33">account | account deletion | Can add account deletion</option>
+
+  <option value="34">account | account deletion | Can change account deletion</option>
+
+  <option value="35">account | account deletion | Can delete account deletion</option>
+
+  <option value="36">account | account deletion | Can view account deletion</option>
+
+  <option value="37">account | email address | Can add email address</option>
+
+  <option value="38">account | email address | Can change email address</option>
+
+  <option value="39">account | email address | Can delete email address</option>
+
+  <option value="40">account | email address | Can view email address</option>
+
+  <option value="41">account | email confirmation | Can add email confirmation</option>
+
+  <option value="42">account | email confirmation | Can change email confirmation</option>
+
+  <option value="43">account | email confirmation | Can delete email confirmation</option>
+
+  <option value="44">account | email confirmation | Can view email confirmation</option>
+
+  <option value="53">account | password expiry | Can add password expiry</option>
+
+  <option value="54">account | password expiry | Can change password expiry</option>
+
+  <option value="55">account | password expiry | Can delete password expiry</option>
+
+  <option value="56">account | password expiry | Can view password expiry</option>
+
+  <option value="57">account | password history | Can add password history</option>
+
+  <option value="58">account | password history | Can change password history</option>
+
+  <option value="59">account | password history | Can delete password history</option>
+
+  <option value="60">account | password history | Can view password history</option>
+
+  <option value="45">account | signup code | Can add signup code</option>
+
+  <option value="46">account | signup code | Can change signup code</option>
+
+  <option value="47">account | signup code | Can delete signup code</option>
+
+  <option value="48">account | signup code | Can view signup code</option>
+
+  <option value="49">account | signup code result | Can add signup code result</option>
+
+  <option value="50">account | signup code result | Can change signup code result</option>
+
+  <option value="51">account | signup code result | Can delete signup code result</option>
+
+  <option value="52">account | signup code result | Can view signup code result</option>
+
+  <option value="1">admin | log entry | Can add log entry</option>
+
+  <option value="2">admin | log entry | Can change log entry</option>
+
+  <option value="3">admin | log entry | Can delete log entry</option>
+
+  <option value="4">admin | log entry | Can view log entry</option>
+
+  <option value="9">auth | group | Can add group</option>
+
+  <option value="10">auth | group | Can change group</option>
+
+  <option value="11">auth | group | Can delete group</option>
+
+  <option value="12">auth | group | Can view group</option>
+
+  <option value="5">auth | permission | Can add permission</option>
+
+  <option value="6">auth | permission | Can change permission</option>
+
+  <option value="7">auth | permission | Can delete permission</option>
+
+  <option value="8">auth | permission | Can view permission</option>
+
+  <option value="13">auth | user | Can add user</option>
+
+  <option value="14">auth | user | Can change user</option>
+
+  <option value="15">auth | user | Can delete user</option>
+
+  <option value="16">auth | user | Can view user</option>
+
+  <option value="17">contenttypes | content type | Can add content type</option>
+
+  <option value="18">contenttypes | content type | Can change content type</option>
+
+  <option value="19">contenttypes | content type | Can delete content type</option>
+
+  <option value="20">contenttypes | content type | Can view content type</option>
+
+  <option value="85">helpdesk | Custom field | Can add Custom field</option>
+
+  <option value="86">helpdesk | Custom field | Can change Custom field</option>
+
+  <option value="87">helpdesk | Custom field | Can delete Custom field</option>
+
+  <option value="88">helpdesk | Custom field | Can view Custom field</option>
+
+  <option value="89">helpdesk | e-mail template | Can add e-mail template</option>
+
+  <option value="90">helpdesk | e-mail template | Can change e-mail template</option>
+
+  <option value="91">helpdesk | e-mail template | Can delete e-mail template</option>
+
+  <option value="92">helpdesk | e-mail template | Can view e-mail template</option>
+
+  <option value="93">helpdesk | Escalation exclusion | Can add Escalation exclusion</option>
+
+  <option value="94">helpdesk | Escalation exclusion | Can change Escalation exclusion</option>
+
+  <option value="95">helpdesk | Escalation exclusion | Can delete Escalation exclusion</option>
+
+  <option value="96">helpdesk | Escalation exclusion | Can view Escalation exclusion</option>
+
+  <option value="97">helpdesk | Follow-up | Can add Follow-up</option>
+
+  <option value="98">helpdesk | Follow-up | Can change Follow-up</option>
+
+  <option value="99">helpdesk | Follow-up | Can delete Follow-up</option>
+
+  <option value="100">helpdesk | Follow-up | Can view Follow-up</option>
+
+  <option value="153">helpdesk | Attachment | Can add Attachment</option>
+
+  <option value="154">helpdesk | Attachment | Can change Attachment</option>
+
+  <option value="155">helpdesk | Attachment | Can delete Attachment</option>
+
+  <option value="156">helpdesk | Attachment | Can view Attachment</option>
+
+  <option value="101">helpdesk | Ignored e-mail address | Can add Ignored e-mail address</option>
+
+  <option value="102">helpdesk | Ignored e-mail address | Can change Ignored e-mail address</option>
+
+  <option value="103">helpdesk | Ignored e-mail address | Can delete Ignored e-mail address</option>
+
+  <option value="104">helpdesk | Ignored e-mail address | Can view Ignored e-mail address</option>
+
+  <option value="105">helpdesk | Knowledge base category | Can add Knowledge base category</option>
+
+  <option value="106">helpdesk | Knowledge base category | Can change Knowledge base category</option>
+
+  <option value="107">helpdesk | Knowledge base category | Can delete Knowledge base category</option>
+
+  <option value="108">helpdesk | Knowledge base category | Can view Knowledge base category</option>
+
+  <option value="149">helpdesk | Attachment | Can add Attachment</option>
+
+  <option value="150">helpdesk | Attachment | Can change Attachment</option>
+
+  <option value="151">helpdesk | Attachment | Can delete Attachment</option>
+
+  <option value="152">helpdesk | Attachment | Can view Attachment</option>
+
+  <option value="109">helpdesk | Knowledge base item | Can add Knowledge base item</option>
+
+  <option value="110">helpdesk | Knowledge base item | Can change Knowledge base item</option>
+
+  <option value="111">helpdesk | Knowledge base item | Can delete Knowledge base item</option>
+
+  <option value="112">helpdesk | Knowledge base item | Can view Knowledge base item</option>
+
+  <option value="113">helpdesk | Pre-set reply | Can add Pre-set reply</option>
+
+  <option value="114">helpdesk | Pre-set reply | Can change Pre-set reply</option>
+
+  <option value="115">helpdesk | Pre-set reply | Can delete Pre-set reply</option>
+
+  <option value="116">helpdesk | Pre-set reply | Can view Pre-set reply</option>
+
+  <option value="117">helpdesk | Queue | Can add Queue</option>
+
+  <option value="118">helpdesk | Queue | Can change Queue</option>
+
+  <option value="119">helpdesk | Queue | Can delete Queue</option>
+
+  <option value="120">helpdesk | Queue | Can view Queue</option>
+
+  <option value="121">helpdesk | Saved search | Can add Saved search</option>
+
+  <option value="122">helpdesk | Saved search | Can change Saved search</option>
+
+  <option value="123">helpdesk | Saved search | Can delete Saved search</option>
+
+  <option value="124">helpdesk | Saved search | Can view Saved search</option>
+
+  <option value="125">helpdesk | Ticket | Can add Ticket</option>
+
+  <option value="126">helpdesk | Ticket | Can change Ticket</option>
+
+  <option value="127">helpdesk | Ticket | Can delete Ticket</option>
+
+  <option value="128">helpdesk | Ticket | Can view Ticket</option>
+
+  <option value="129">helpdesk | ticket cc | Can add ticket cc</option>
+
+  <option value="130">helpdesk | ticket cc | Can change ticket cc</option>
+
+  <option value="131">helpdesk | ticket cc | Can delete ticket cc</option>
+
+  <option value="132">helpdesk | ticket cc | Can view ticket cc</option>
+
+  <option value="133">helpdesk | Ticket change | Can add Ticket change</option>
+
+  <option value="134">helpdesk | Ticket change | Can change Ticket change</option>
+
+  <option value="135">helpdesk | Ticket change | Can delete Ticket change</option>
+
+  <option value="136">helpdesk | Ticket change | Can view Ticket change</option>
+
+  <option value="137">helpdesk | Ticket custom field value | Can add Ticket custom field value</option>
+
+  <option value="138">helpdesk | Ticket custom field value | Can change Ticket custom field value</option>
+
+  <option value="139">helpdesk | Ticket custom field value | Can delete Ticket custom field value</option>
+
+  <option value="140">helpdesk | Ticket custom field value | Can view Ticket custom field value</option>
+
+  <option value="141">helpdesk | Ticket dependency | Can add Ticket dependency</option>
+
+  <option value="142">helpdesk | Ticket dependency | Can change Ticket dependency</option>
+
+  <option value="143">helpdesk | Ticket dependency | Can delete Ticket dependency</option>
+
+  <option value="144">helpdesk | Ticket dependency | Can view Ticket dependency</option>
+
+  <option value="145">helpdesk | User Setting | Can add User Setting</option>
+
+  <option value="146">helpdesk | User Setting | Can change User Setting</option>
+
+  <option value="147">helpdesk | User Setting | Can delete User Setting</option>
+
+  <option value="148">helpdesk | User Setting | Can view User Setting</option>
+
+  <option value="61">pinax_invitations | invitation stat | Can add invitation stat</option>
+
+  <option value="62">pinax_invitations | invitation stat | Can change invitation stat</option>
+
+  <option value="63">pinax_invitations | invitation stat | Can delete invitation stat</option>
+
+  <option value="64">pinax_invitations | invitation stat | Can view invitation stat</option>
+
+  <option value="65">pinax_invitations | join invitation | Can add join invitation</option>
+
+  <option value="66">pinax_invitations | join invitation | Can change join invitation</option>
+
+  <option value="67">pinax_invitations | join invitation | Can delete join invitation</option>
+
+  <option value="68">pinax_invitations | join invitation | Can view join invitation</option>
+
+  <option value="69">pinax_teams | Membership | Can add Membership</option>
+
+  <option value="70">pinax_teams | Membership | Can change Membership</option>
+
+  <option value="71">pinax_teams | Membership | Can delete Membership</option>
+
+  <option value="72">pinax_teams | Membership | Can view Membership</option>
+
+  <option value="77">pinax_teams | Simple Membership | Can add Simple Membership</option>
+
+  <option value="78">pinax_teams | Simple Membership | Can change Simple Membership</option>
+
+  <option value="79">pinax_teams | Simple Membership | Can delete Simple Membership</option>
+
+  <option value="80">pinax_teams | Simple Membership | Can view Simple Membership</option>
+
+  <option value="81">pinax_teams | Simple Team | Can add Simple Team</option>
+
+  <option value="82">pinax_teams | Simple Team | Can change Simple Team</option>
+
+  <option value="83">pinax_teams | Simple Team | Can delete Simple Team</option>
+
+  <option value="84">pinax_teams | Simple Team | Can view Simple Team</option>
+
+  <option value="73">pinax_teams | Team | Can add Team</option>
+
+  <option value="74">pinax_teams | Team | Can change Team</option>
+
+  <option value="75">pinax_teams | Team | Can delete Team</option>
+
+  <option value="76">pinax_teams | Team | Can view Team</option>
+
+  <option value="157">reversion | revision | Can add revision</option>
+
+  <option value="158">reversion | revision | Can change revision</option>
+
+  <option value="159">reversion | revision | Can delete revision</option>
+
+  <option value="160">reversion | revision | Can view revision</option>
+
+  <option value="161">reversion | version | Can add version</option>
+
+  <option value="162">reversion | version | Can change version</option>
+
+  <option value="163">reversion | version | Can delete version</option>
+
+  <option value="164">reversion | version | Can view version</option>
+
+  <option value="21">sessions | session | Can add session</option>
+
+  <option value="22">sessions | session | Can change session</option>
+
+  <option value="23">sessions | session | Can delete session</option>
+
+  <option value="24">sessions | session | Can view session</option>
+
+  <option value="25">sites | site | Can add site</option>
+
+  <option value="26">sites | site | Can change site</option>
+
+  <option value="27">sites | site | Can delete site</option>
+
+  <option value="28">sites | site | Can view site</option>
+
+</select>
+    
+        
+    
+</div>
+                        
+                    
+                    
+                        <div class="help">Specific permissions for this user. Hold down “Control”, or “Command” on a Mac, to select more than one.</div>
+                    
+                </div>
+            
+        </div>
+    
+</fieldset>
+
+
+  <fieldset class="module aligned ">
+    <h2>Important dates</h2>
+    
+    
+        <div class="form-row field-last_login">
+            
+            
+                <div>
+                    
+                    
+                        <label for="id_last_login_0">Last login:</label>
+                        
+                            <p class="datetime">
+  Date: <input type="text" name="last_login_0" class="vDateField" size="10" id="id_last_login_0">
+
+<br>
+  Time: <input type="text" name="last_login_1" class="vTimeField" size="8" id="id_last_login_1">
+
+
+</p>
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-date_joined">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_date_joined_0">Date joined:</label>
+                        
+                            <p class="datetime">
+  Date: <input type="text" name="date_joined_0" value="2025-04-27" class="vDateField" size="10" required id="id_date_joined_0">
+
+<br>
+  Time: <input type="text" name="date_joined_1" value="15:09:54" class="vTimeField" size="8" required id="id_date_joined_1">
+
+
+</p><input type="hidden" name="initial-date_joined_0" value="2025-04-27" id="initial-id_date_joined_0"><input type="hidden" name="initial-date_joined_1" value="15:09:54" id="initial-id_date_joined_1">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="submit-row">
+
+<input type="submit" value="Save" class="default" name="_save">
+
+    
+    <p class="deletelink-box"><a href="/admin/auth/user/20/delete/" class="deletelink">Delete</a></p>
+
+
+<input type="submit" value="Save and add another" name="_addanother">
+<input type="submit" value="Save and continue editing" name="_continue">
+
+
+</div>
+
+
+
+    <script id="django-admin-form-add-constants"
+            src="/static/admin/js/change_form.js"
+            
+            async>
+    </script>
+
+
+
+
+<script id="django-admin-prepopulated-fields-constants"
+        src="/static/admin/js/prepopulate_init.js"
+        data-prepopulated-fields="[]">
+</script>
+
+
+</div>
+</form></div>
+
+          
+          <br class="clear">
+        </div>
+        <!-- END Content -->
+        <div id="footer"></div>
+      </div>
+    </div>
+</div>
+<!-- END Container -->
+</body>
+</html>

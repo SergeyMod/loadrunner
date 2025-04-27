@@ -1,0 +1,14 @@
+[UC03_new_ticket]
+SnapshotIndex=I1_UC03_new_ticket
+[UC03_logout]
+SnapshotIndex=I1_UC03_logout
+[UC03_submit_ticket]
+SnapshotIndex=I1_UC03_submit_ticket
+[UC03_home_page]
+SnapshotIndex=I1_UC03_home_page
+[UC03_login]
+SnapshotIndex=I1_UC03_login
+[vuser_init]
+SnapshotIndex=I1_vuser_init
+[vuser_end]
+SnapshotIndex=I1_vuser_end
