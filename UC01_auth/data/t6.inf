@@ -1,9 +1,0 @@
-[t6]
-SnapshotXmlFile=snapshot_6.xml
-FileName1=t6.htm
-URL1=http://192.168.0.138:23232/
-Total=1
-RequestHeaderFile=t6_RequestHeader.txt
-RequestBodyFile=NONE
-ResponseHeaderFile=t6_ResponseHeader.txt
-ContentType=text/html
