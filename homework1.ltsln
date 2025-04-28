@@ -7,7 +7,7 @@ Project("A14F42CB-EBA3-40DC-BF20-322F5B3E748E") = "WebHttpHtml4", "UC01_auth\Web
 		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XGxvYWRydW5uZXJcVUMwMV9hdXRoXFdlYkh0dHBIdG1sNC51c3I8L0xvYWREYXRhPg0KICA8RmlsZXM+DQogICAgPEZpbGU+V2ViSHR0cEh0bWw0LnVzcjwvRmlsZT4NCiAgPC9GaWxlcz4NCiAgPE1vZGlmaWVkPjIwMjUtMDQtMjhUMTM6MDI6NTAuNDk1MzY0MyswNTowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+AAAAAAAAAAAAAAAAAA__
 	EndProjectSection
 	ProjectSection(ExpandInVugen) = Data
-		Value = True
+		Value = False
 	EndProjectSection
 EndProject
 Project("319B174D-DE52-4893-8A01-52C89F850963") = "UC02_UserGen", "UC02_UserGen\UC02_UserGen.usr", "319B174D-DE52-4893-8A01-52C89F850963"
@@ -15,7 +15,7 @@ Project("319B174D-DE52-4893-8A01-52C89F850963") = "UC02_UserGen", "UC02_UserGen\
 		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XGxvYWRydW5uZXJcVUMwMl9Vc2VyR2VuXFVDMDJfVXNlckdlbi51c3I8L0xvYWREYXRhPg0KICA8RmlsZXM+DQogICAgPEZpbGU+VUMwMl9Vc2VyR2VuLnVzcjwvRmlsZT4NCiAgPC9GaWxlcz4NCiAgPE1vZGlmaWVkPjIwMjUtMDQtMjhUMTM6MDM6MjEuMDc4MjIzMiswNTowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+AAAAAAAAAAAAAA__
 	EndProjectSection
 	ProjectSection(ExpandInVugen) = Data
-		Value = True
+		Value = False
 	EndProjectSection
 EndProject
 Project("9C408814-00B6-409A-B5A2-9FBC9B77093D") = "UC03_Create_ticket", "UC03_Create_ticket\UC03_Create_ticket.usr", "9C408814-00B6-409A-B5A2-9FBC9B77093D"
@@ -23,7 +23,15 @@ Project("9C408814-00B6-409A-B5A2-9FBC9B77093D") = "UC03_Create_ticket", "UC03_Cr
 		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XGxvYWRydW5uZXJcVUMwM19DcmVhdGVfdGlja2V0XFVDMDNfQ3JlYXRlX3RpY2tldC51c3I8L0xvYWREYXRhPg0KICA8RmlsZXM+DQogICAgPEZpbGU+VUMwM19DcmVhdGVfdGlja2V0LnVzcjwvRmlsZT4NCiAgPC9GaWxlcz4NCiAgPE1vZGlmaWVkPjIwMjUtMDQtMjhUMTM6MDM6MjYuODQxODkyNCswNTowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+
 	EndProjectSection
 	ProjectSection(ExpandInVugen) = Data
-		Value = True
+		Value = False
+	EndProjectSection
+EndProject
+Project("D0B047F9-99DE-4A31-A168-7818D1646C7E") = "UC04_pagination", "UC04_pagination\UC04_pagination.usr", "D0B047F9-99DE-4A31-A168-7818D1646C7E"
+	ProjectSection(CustomLoading) = Data
+		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XGxvYWRydW5uZXJcVUMwNF9wYWdpbmF0aW9uXFVDMDRfcGFnaW5hdGlvbi51c3I8L0xvYWREYXRhPg0KICA8RmlsZXM+DQogICAgPEZpbGU+RDpcbG9hZHJ1bm5lclxVQzA0X3BhZ2luYXRpb25cVUMwNF9wYWdpbmF0aW9uLnVzcjwvRmlsZT4NCiAgPC9GaWxlcz4NCiAgPE1vZGlmaWVkPjIwMjUtMDQtMjhUMjE6MTY6MjQuMTM3Njc4OCswNTowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+
+	EndProjectSection
+	ProjectSection(ExpandInVugen) = Data
+		Value = False
 	EndProjectSection
 EndProject
 Global
@@ -44,5 +52,9 @@ Global
 		9C408814-00B6-409A-B5A2-9FBC9B77093D.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		9C408814-00B6-409A-B5A2-9FBC9B77093D.Release|Any CPU.Build.0 = Release|Any CPU
 		9C408814-00B6-409A-B5A2-9FBC9B77093D.Release|Any CPU.ActiveCfg = Release|Any CPU
+		D0B047F9-99DE-4A31-A168-7818D1646C7E.Debug|Any CPU.Build.0 = Debug|Any CPU
+		D0B047F9-99DE-4A31-A168-7818D1646C7E.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		D0B047F9-99DE-4A31-A168-7818D1646C7E.Release|Any CPU.Build.0 = Release|Any CPU
+		D0B047F9-99DE-4A31-A168-7818D1646C7E.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 EndGlobal
