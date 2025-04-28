@@ -1,9 +1,0 @@
--+
--DCCI
--D_IDA_XL
--DWINNT
--ID:\loadrunner\UC04_pagination
--IC:\Program Files (x86)\HPE\LoadRunner\include
--ed:\loadrunner\uc04_pagination\\logfile.log
-d:\loadrunner\uc04_pagination\\combined_UC04_pagination.c
-d:\loadrunner\uc04_pagination\\pre_cci.c
