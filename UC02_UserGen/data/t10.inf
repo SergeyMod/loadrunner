@@ -1,0 +1,11 @@
+[t10]
+SnapshotXmlFile=snapshot_10.xml
+FileName1=t10.htm
+URL1=http://192.168.0.138:23232/tickets/
+Total=2
+RequestHeaderFile=t10_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t10_ResponseHeader.txt
+ContentType=text/html
+FileName2=t10_dashboard.css
+URL2=http://192.168.0.138:23232/static/admin/css/dashboard.css

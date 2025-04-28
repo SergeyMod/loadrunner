@@ -1,0 +1,37 @@
+[
+    {
+        "transactionName": "UC02_TR01_home_page",
+        "rawStartTime": 1745766593804,
+        "rawEndTime": 1745766594680
+    },
+    {
+        "transactionName": "UC02_TR02_login",
+        "rawStartTime": 1745766594691,
+        "rawEndTime": 1745766595621
+    },
+    {
+        "transactionName": "UC02_TR03_open_setting",
+        "rawStartTime": 1745766595631,
+        "rawEndTime": 1745766596065
+    },
+    {
+        "transactionName": "UC02_TR04_open_maintain_users",
+        "rawStartTime": 1745766596075,
+        "rawEndTime": 1745766596913
+    },
+    {
+        "transactionName": "UC02_TR05_add_user",
+        "rawStartTime": 1745766596928,
+        "rawEndTime": 1745766597227
+    },
+    {
+        "transactionName": "UC02_TR06_registration",
+        "rawStartTime": 1745766597239,
+        "rawEndTime": 1745766598607
+    },
+    {
+        "transactionName": "UC02_TR07_logout",
+        "rawStartTime": 1745766598614,
+        "rawEndTime": 1745766598882
+    }
+]

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+<head>
+<title>Add user | Django site admin</title>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/base.css">
+
+  <link rel="stylesheet" type="text/css" href="/static/admin/css/nav_sidebar.css">
+  <script src="/static/admin/js/nav_sidebar.js" defer></script>
+
+<link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css">
+
+
+<script src="/admin/jsi18n/"></script>
+<script src="/static/admin/js/vendor/jquery/jquery.js"></script>
+<script src="/static/admin/js/jquery.init.js"></script>
+<script src="/static/admin/js/core.js"></script>
+<script src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+<script src="/static/admin/js/actions.js"></script>
+<script src="/static/admin/js/urlify.js"></script>
+<script src="/static/admin/js/prepopulate.js"></script>
+<script src="/static/admin/js/vendor/xregexp/xregexp.js"></script>
+
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/responsive.css">
+    
+
+<meta name="robots" content="NONE,NOARCHIVE">
+</head>
+
+
+<body class=" app-auth model-user change-form"
+  data-admin-utc-offset="0">
+
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<h1 id="site-name"><a href="/admin/">Django administration</a></h1>
+
+        </div>
+        
+        
+        <div id="user-tools">
+            
+                Welcome,
+                <strong>admin</strong>.
+            
+            
+                
+                    <a href="/">View site</a> /
+                
+                
+                    
+                    
+                
+                
+                <a href="/admin/password_change/">Change password</a> /
+                
+                <a href="/admin/logout/">Log out</a>
+            
+        </div>
+        
+        
+        
+    </div>
+    <!-- END Header -->
+    
+<div class="breadcrumbs">
+<a href="/admin/">Home</a>
+&rsaquo; <a href="/admin/auth/">Authentication and Authorization</a>
+&rsaquo; <a href="/admin/auth/user/">Users</a>
+&rsaquo; Add user
+</div>
+
+    
+
+    <div class="main shifted" id="main">
+      
+        
+          
+<button class="sticky toggle-nav-sidebar" id="toggle-nav-sidebar" aria-label="Toggle navigation"></button>
+<nav class="sticky" id="nav-sidebar">
+  
+
+
+  
+    <div class="app-account module">
+      <table>
+        <caption>
+          <a href="/admin/account/" class="section" title="Models in the Account application">Account</a>
+        </caption>
+        
+          <tr class="model-accountdeletion">
+            
+              <th scope="row"><a href="/admin/account/accountdeletion/">Account deletions</a></th>
+            
+
+            
+              <td><a href="/admin/account/accountdeletion/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-account">
+            
+              <th scope="row"><a href="/admin/account/account/">Accounts</a></th>
+            
+
+            
+              <td><a href="/admin/account/account/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-emailaddress">
+            
+              <th scope="row"><a href="/admin/account/emailaddress/">Email addresses</a></th>
+            
+
+            
+              <td><a href="/admin/account/emailaddress/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-passwordexpiry">
+            
+              <th scope="row"><a href="/admin/account/passwordexpiry/">Password expirys</a></th>
+            
+
+            
+              <td><a href="/admin/account/passwordexpiry/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-passwordhistory">
+            
+              <th scope="row"><a href="/admin/account/passwordhistory/">Password histories</a></th>
+            
+
+            
+              <td><a href="/admin/account/passwordhistory/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-signupcode">
+            
+              <th scope="row"><a href="/admin/account/signupcode/">Signup codes</a></th>
+            
+
+            
+              <td><a href="/admin/account/signupcode/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </table>
+    </div>
+  
+    <div class="app-auth module current-app">
+      <table>
+        <caption>
+          <a href="/admin/auth/" class="section" title="Models in the Authentication and Authorization application">Authentication and Authorization</a>
+        </caption>
+        
+          <tr class="model-group">
+            
+              <th scope="row"><a href="/admin/auth/group/">Groups</a></th>
+            
+
+            
+              <td><a href="/admin/auth/group/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-user current-model">
+            
+              <th scope="row"><a href="/admin/auth/user/" aria-current="page">Users</a></th>
+            
+
+            
+              <td><a href="/admin/auth/user/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </table>
+    </div>
+  
+    <div class="app-helpdesk module">
+      <table>
+        <caption>
+          <a href="/admin/helpdesk/" class="section" title="Models in the Helpdesk application">Helpdesk</a>
+        </caption>
+        
+          <tr class="model-customfield">
+            
+              <th scope="row"><a href="/admin/helpdesk/customfield/">Custom fields</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/customfield/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-emailtemplate">
+            
+              <th scope="row"><a href="/admin/helpdesk/emailtemplate/">E-mail templates</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/emailtemplate/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-escalationexclusion">
+            
+              <th scope="row"><a href="/admin/helpdesk/escalationexclusion/">Escalation exclusions</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/escalationexclusion/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-followup">
+            
+              <th scope="row"><a href="/admin/helpdesk/followup/">Follow-ups</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/followup/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-ignoreemail">
+            
+              <th scope="row"><a href="/admin/helpdesk/ignoreemail/">Ignored e-mail addresses</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/ignoreemail/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-kbcategory">
+            
+              <th scope="row"><a href="/admin/helpdesk/kbcategory/">Knowledge base categories</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/kbcategory/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-kbitem">
+            
+              <th scope="row"><a href="/admin/helpdesk/kbitem/">Knowledge base items</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/kbitem/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-presetreply">
+            
+              <th scope="row"><a href="/admin/helpdesk/presetreply/">Pre-set replies</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/presetreply/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-queue">
+            
+              <th scope="row"><a href="/admin/helpdesk/queue/">Queues</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/queue/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-ticket">
+            
+              <th scope="row"><a href="/admin/helpdesk/ticket/">Tickets</a></th>
+            
+
+            
+              <td><a href="/admin/helpdesk/ticket/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </table>
+    </div>
+  
+    <div class="app-pinax_invitations module">
+      <table>
+        <caption>
+          <a href="/admin/pinax_invitations/" class="section" title="Models in the Pinax Invitations application">Pinax Invitations</a>
+        </caption>
+        
+          <tr class="model-invitationstat">
+            
+              <th scope="row"><a href="/admin/pinax_invitations/invitationstat/">Invitation stats</a></th>
+            
+
+            
+              <td><a href="/admin/pinax_invitations/invitationstat/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-joininvitation">
+            
+              <th scope="row"><a href="/admin/pinax_invitations/joininvitation/">Join invitations</a></th>
+            
+
+            
+              <td><a href="/admin/pinax_invitations/joininvitation/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </table>
+    </div>
+  
+    <div class="app-pinax_teams module">
+      <table>
+        <caption>
+          <a href="/admin/pinax_teams/" class="section" title="Models in the Pinax Teams application">Pinax Teams</a>
+        </caption>
+        
+          <tr class="model-membership">
+            
+              <th scope="row"><a href="/admin/pinax_teams/membership/">Memberships</a></th>
+            
+
+            
+              <td><a href="/admin/pinax_teams/membership/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-team">
+            
+              <th scope="row"><a href="/admin/pinax_teams/team/">Teams</a></th>
+            
+
+            
+              <td><a href="/admin/pinax_teams/team/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </table>
+    </div>
+  
+    <div class="app-sites module">
+      <table>
+        <caption>
+          <a href="/admin/sites/" class="section" title="Models in the Sites application">Sites</a>
+        </caption>
+        
+          <tr class="model-site">
+            
+              <th scope="row"><a href="/admin/sites/site/">Sites</a></th>
+            
+
+            
+              <td><a href="/admin/sites/site/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </table>
+    </div>
+  
+
+
+</nav>
+
+        
+      
+      <div class="content">
+        
+          
+        
+        <!-- Content -->
+        <div id="content" class="colM">
+          
+          <h1>Add user</h1>
+          
+          <div id="content-main">
+
+
+
+<form method="post" id="user_form" novalidate><input type="hidden" name="csrfmiddlewaretoken" value="x9L8KlD6EbnEYo2WAqokt7FytVjZMgRG9nEXruwtU7vkC7jbxG7eIgZJqGrvFfBU">
+  
+    <p>First, enter a username and password. Then, you’ll be able to edit more user options.</p>
+  
+
+<div>
+
+
+
+
+
+
+
+  <fieldset class="module aligned wide">
+    
+    
+    
+        <div class="form-row field-username">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_username">Username:</label>
+                        
+                            <input type="text" name="username" class="vTextField" maxlength="150" autocapitalize="none" autocomplete="username" autofocus required id="id_username">
+                        
+                    
+                    
+                        <div class="help">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</div>
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-password1">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_password1">Password:</label>
+                        
+                            <input type="password" name="password1" autocomplete="new-password" required id="id_password1">
+                        
+                    
+                    
+                        <div class="help"><ul><li>Your password can’t be too similar to your other personal information.</li><li>Your password must contain at least 8 characters.</li><li>Your password can’t be a commonly used password.</li><li>Your password can’t be entirely numeric.</li></ul></div>
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-password2">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_password2">Password confirmation:</label>
+                        
+                            <input type="password" name="password2" autocomplete="new-password" required id="id_password2">
+                        
+                    
+                    
+                        <div class="help">Enter the same password as before, for verification.</div>
+                    
+                </div>
+            
+        </div>
+    
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="submit-row">
+
+<input type="submit" value="Save" class="default" name="_save">
+
+
+<input type="submit" value="Save and add another" name="_addanother">
+<input type="submit" value="Save and continue editing" name="_continue">
+
+
+</div>
+
+
+
+    <script id="django-admin-form-add-constants"
+            src="/static/admin/js/change_form.js"
+            
+                data-model-name="user"
+            
+            async>
+    </script>
+
+
+
+
+<script id="django-admin-prepopulated-fields-constants"
+        src="/static/admin/js/prepopulate_init.js"
+        data-prepopulated-fields="[]">
+</script>
+
+
+</div>
+</form></div>
+
+          
+          <br class="clear">
+        </div>
+        <!-- END Content -->
+        <div id="footer"></div>
+      </div>
+    </div>
+</div>
+<!-- END Container -->
+</body>
+</html>
