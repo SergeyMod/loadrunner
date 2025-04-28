@@ -61,7 +61,7 @@ UC01_login=cci
 UC01_logout=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="OpenMainPage__*delimiter*__Login__*delimiter*__UC01_TR02_login__*delimiter*__Logout__*delimiter*__UC01_TR03_logout"
+Order="OpenMainPage__*delimiter*__UC01_TR01_home_page__*delimiter*__Login__*delimiter*__UC01_TR02_login__*delimiter*__Logout__*delimiter*__UC01_TR03_logout"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -69,6 +69,7 @@ LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
 OpenMainPage=
+UC01_TR01_home_page=
 Login=
 UC01_TR02_login=
 Logout=

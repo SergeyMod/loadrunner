@@ -12,9 +12,9 @@ UC01_home_page()
 		"Type=hidden",
 		LAST);
 	
-	lr_start_transaction("OpenMainPage");
+	lr_start_transaction("UC01_TR01_home_page");
 	
-	web_url("home_page", 
+	web_url("UC01_TR01_home_page", 
 		"URL=http://{host}:{port}/", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -23,7 +23,7 @@ UC01_home_page()
 		"Mode=HTML",
 		LAST);
 	
-	lr_end_transaction("OpenMainPage", LR_AUTO);
+	lr_end_transaction("UC01_TR01_home_page", LR_AUTO);
 	
 	return 0;
 }
