@@ -1,11 +1,11 @@
-UC04_logout()
+UC06_logout()
 {
 	
-	lr_start_transaction("UC04_TR05_logout");
+	lr_start_transaction("UC06_TR05_logout");
 	
 	lr_think_time(10);
 	
-	web_url("UC04_TR05_logout", 
+	web_url("UC06_TR05_logout", 
 		"URL=http://{host}:{port}/logout/", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -15,7 +15,7 @@ UC04_logout()
 		"Mode=HTML", 
 		LAST);
 	
-	lr_end_transaction("UC04_TR05_logout", LR_AUTO);
+	lr_end_transaction("UC06_TR05_logout", LR_AUTO);
 	
 	return 0;
 }

@@ -1,34 +1,7 @@
-UC04_chenge_10_item()
+UC06_select_random()
 {
-
-	lr_think_time(10);
-	
-	
-///*Correlation comment - Do not change!  Original value='eyJmaWx0ZXJpbmciOiB7InN0YXR1c19faW4iOiBbMSwgMl19LCAiZmlsdGVyaW5nX29yIjogeyJzdGF0dXNfX2luIjogWzEsIDJdfSwgInNvcnRpbmciOiAiY3JlYXRlZCIsICJzb3J0cmV2ZXJzZSI6IG51bGwsICJzZWFyY2hfc3RyaW5nIjogIiJ9' Name ='query_encoded' Type ='ResponseBased'*/
-//	web_reg_save_param_attrib(
-//		"ParamName=query_encoded",
-//		"TagName=input",
-//		"Extract=value",
-//		"Name=query_encoded",
-//		"Type=hidden",
-//		SEARCH_FILTERS,
-//		"IgnoreRedirections=No",
-//		LAST);
-		
-		
-	lr_start_transaction("UC04_TR03_chenge_10");
-	
-	
-	web_url("UC04_TR03_chenge_10_2", 
-		"URL=http://{host}:{port}/tickets/", 
-		"TargetFrame=", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://{host}:{port}/login/?next=/", 
-		"Snapshot=t17.inf", 
-		"Mode=HTML", 
-		LAST);
-
+	char text[64];
+	int num;
 	web_reg_save_param_json(
 		"ParamName=tickets",
 	    "QueryString=$.data[*].id",
@@ -53,11 +26,28 @@ UC04_chenge_10_item()
 		LAST);
 	
 	
+	num = atoi(lr_eval_string("{rand_num}"));
+	sprintf(text, "{tickets_%d}", num);
 	
-	lr_end_transaction("UC04_TR03_chenge_10", LR_AUTO);
+	lr_save_string(lr_eval_string(text), "num");
+	
+	lr_think_time(10);
+	
+	web_reg_find("Text=Unassigned","SaveCount=count_unassigned",LAST);
+	
+	lr_start_transaction("UC06_TR03_select_random");
+
+	web_url("UC06_TR03_select_random", 
+	"URL=http://{host}:{port}/tickets/{num}/", 
+	"TargetFrame=", 
+	"Resource=0", 
+	"RecContentType=text/html", 
+	"Referer=http://{host}:{port}/tickets/?sortx=created&status=1&date_from=&date_to=&q=", 
+	"Snapshot=t13.inf", 
+	"Mode=HTML", 
+	LAST);
+	
+	lr_end_transaction("UC06_TR03_select_random", LR_AUTO);
 
 	return 0;
 }
-
-
-		

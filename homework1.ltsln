@@ -34,6 +34,22 @@ Project("D0B047F9-99DE-4A31-A168-7818D1646C7E") = "UC04_pagination", "UC04_pagin
 		Value = False
 	EndProjectSection
 EndProject
+Project("76AAE720-A5B0-4C32-902A-A57146D24964") = "UC05_filter", "UC05_filter\UC05_filter.usr", "76AAE720-A5B0-4C32-902A-A57146D24964"
+	ProjectSection(CustomLoading) = Data
+		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XGxvYWRydW5uZXJcVUMwNV9maWx0ZXJcVUMwNV9maWx0ZXIudXNyPC9Mb2FkRGF0YT4NCiAgPEZpbGVzPg0KICAgIDxGaWxlPkQ6XGxvYWRydW5uZXJcVUMwNV9maWx0ZXJcVUMwNV9maWx0ZXIudXNyPC9GaWxlPg0KICA8L0ZpbGVzPg0KICA8TW9kaWZpZWQ+MjAyNS0wNS0wM1QxODowMjoxOS42MjAxMDIyKzA1OjAwPC9Nb2RpZmllZD4NCjwvUGVyc2lzdGVuY2VUb2tlbj4_
+	EndProjectSection
+	ProjectSection(ExpandInVugen) = Data
+		Value = False
+	EndProjectSection
+EndProject
+Project("322BDE96-7E26-4E93-A0C1-930C9106740B") = "UC06_open_ticket", "UC06_open_ticket\UC06_open_ticket.usr", "322BDE96-7E26-4E93-A0C1-930C9106740B"
+	ProjectSection(CustomLoading) = Data
+		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XGxvYWRydW5uZXJcVUMwNl9vcGVuX3RpY2tldFxVQzA2X29wZW5fdGlja2V0LnVzcjwvTG9hZERhdGE+DQogIDxGaWxlcz4NCiAgICA8RmlsZT5EOlxsb2FkcnVubmVyXFVDMDZfb3Blbl90aWNrZXRcVUMwNl9vcGVuX3RpY2tldC51c3I8L0ZpbGU+DQogIDwvRmlsZXM+DQogIDxNb2RpZmllZD4yMDI1LTA1LTA0VDE1OjUzOjU3LjYwNTU4MjYrMDU6MDA8L01vZGlmaWVkPg0KPC9QZXJzaXN0ZW5jZVRva2VuPg__
+	EndProjectSection
+	ProjectSection(ExpandInVugen) = Data
+		Value = True
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,5 +72,13 @@ Global
 		D0B047F9-99DE-4A31-A168-7818D1646C7E.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		D0B047F9-99DE-4A31-A168-7818D1646C7E.Release|Any CPU.Build.0 = Release|Any CPU
 		D0B047F9-99DE-4A31-A168-7818D1646C7E.Release|Any CPU.ActiveCfg = Release|Any CPU
+		76AAE720-A5B0-4C32-902A-A57146D24964.Debug|Any CPU.Build.0 = Debug|Any CPU
+		76AAE720-A5B0-4C32-902A-A57146D24964.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		76AAE720-A5B0-4C32-902A-A57146D24964.Release|Any CPU.Build.0 = Release|Any CPU
+		76AAE720-A5B0-4C32-902A-A57146D24964.Release|Any CPU.ActiveCfg = Release|Any CPU
+		322BDE96-7E26-4E93-A0C1-930C9106740B.Debug|Any CPU.Build.0 = Debug|Any CPU
+		322BDE96-7E26-4E93-A0C1-930C9106740B.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		322BDE96-7E26-4E93-A0C1-930C9106740B.Release|Any CPU.Build.0 = Release|Any CPU
+		322BDE96-7E26-4E93-A0C1-930C9106740B.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 EndGlobal

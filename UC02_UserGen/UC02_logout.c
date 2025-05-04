@@ -3,6 +3,8 @@ UC02_logout()
 	
 	lr_start_transaction("UC02_TR07_logout");
 	
+	lr_think_time(10);
+	
 	web_url("UC02_TR07_logout", 
 		"URL=http://{host}:{port}/logout/", 
 		"TargetFrame=", 

@@ -3,6 +3,7 @@ UC02_registration()
 
 	lr_start_transaction("UC02_TR06_registration");
 	
+	lr_think_time(10);
 	
 	web_reg_save_param_attrib(
 		"ParamName=csrfmiddlewaretoken",
@@ -18,6 +19,7 @@ UC02_registration()
 		"NotFound=warning",
 		LAST);
 	
+	lr_think_time(10);
 
 	web_submit_data("UC02_TR06_registration", 
 		"Action=http://{host}:{port}/admin/auth/user/add/", 
@@ -40,6 +42,8 @@ UC02_registration()
 		"Url=/static/admin/img/icon-clock.svg", "Referer=http://{host}:{port}/static/admin/css/widgets.css", ENDITEM, 
 		"Url=/static/admin/img/icon-calendar.svg", "Referer=http://{host}:{port}/static/admin/css/widgets.css", ENDITEM, 
 		LAST);
+	
+	lr_think_time(10);
 
 	web_submit_data("UC02_TR06_registration_change", 
 		"Action=http://{host}:{port}/admin/auth/user/{num}/change/", 
@@ -70,14 +74,3 @@ UC02_registration()
 
 	return 0;
 }
-
-//private String getStr(int lenght) {
-//	String charset = "abcdefghijklmnopqrstuvwxyz";
-//	random = new Random();
-//    char[] result = new char[lenght];
-//    for (int i = 0; i < lenght; i++) {
-//        if (i == 0 && isName)  result[i] = 'Â'; //Character.toUpperCase(charset.charAt(random.nextInt(charset.length())));
-//        else result[i] = charset.charAt(random.nextInt(charset.length()));
-//    }
-//    return new String(result);
-//}

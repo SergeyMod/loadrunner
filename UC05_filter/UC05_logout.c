@@ -1,4 +1,4 @@
-UC04_logout()
+UC05_logout()
 {
 	
 	lr_start_transaction("UC04_TR05_logout");
