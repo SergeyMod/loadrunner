@@ -71,7 +71,7 @@ UC06_chenge_assigned=cci
 UC06_logout=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="UC06_TR01_home_page__*delimiter*__UC04_TR02_login__*delimiter*__UC06_TR02_login__*delimiter*__UC04_TR04_select_random__*delimiter*__UC06_TR03_select_random__*delimiter*__UC04_TR05_logout__*delimiter*__UC06_TR05_logout"
+Order="UC06_TR01_home_page__*delimiter*__UC04_TR02_login__*delimiter*__UC06_TR02_login__*delimiter*__UC04_TR04_select_random__*delimiter*__UC06_TR03_select_random__*delimiter*__UC06_TR03_chenge_assigned__*delimiter*__UC06_TR03_chenge_assigned__*delimiter*__UC04_TR05_logout__*delimiter*__UC06_TR05_logout"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -88,5 +88,6 @@ UC04_TR02_login=
 UC06_TR02_login=
 UC04_TR04_select_random=
 UC06_TR03_select_random=
+UC06_TR03_chenge_assigned=
 UC04_TR05_logout=
 UC06_TR05_logout=

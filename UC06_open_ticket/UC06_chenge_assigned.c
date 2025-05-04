@@ -8,11 +8,11 @@ UC06_chenge_assigned()
 		lr_start_transaction("UC06_TR03_chenge_assigned");
 		
 		web_url("UC06_TR03_chenge_assigned", 
-		"URL=http://192.168.0.138:23232/tickets/{num}/?take", 
+		"URL=http://{host}:{port}/tickets/{num}/?take", 
 		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=text/html", 
-		"Referer=http://192.168.0.138:23232/tickets/{num}/", 
+		"Referer=http://{host}:{port}/tickets/{num}/", 
 		"Snapshot=t4.inf", 
 		"Mode=HTML", 
 		LAST);
