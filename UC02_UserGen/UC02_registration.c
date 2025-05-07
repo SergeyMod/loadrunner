@@ -58,7 +58,7 @@ UC02_registration()
 		"Name=username", "Value={user_gen}", ENDITEM, 
 		"Name=first_name", "Value=", ENDITEM, 
 		"Name=last_name", "Value=", ENDITEM, 
-		"Name=email", "Value=", ENDITEM, 
+		"Name=email", "Value={user_gen}@example.org", ENDITEM, 
 		"Name=is_active", "Value=on", ENDITEM, 
 		"Name=is_staff", "Value=on", ENDITEM, 
 		"Name=last_login_0", "Value=", ENDITEM, 

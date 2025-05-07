@@ -85,8 +85,8 @@ Order="UC02_TR01_home_page__*delimiter*__UC02_TR02_login__*delimiter*__UC02_TR03
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
-LastReplayedRunName=
-ActiveRunName=
+LastReplayedRunName=result1
+ActiveRunName=result1
 [ImportedAction]
 UC02_home_page=
 UC02_login=

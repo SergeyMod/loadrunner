@@ -1,5 +1,19 @@
 UC02_logout()
 {
+	FILE *f;
+	f = fopen("dat\\username.dat", "a"); // 'a' = append (добавить в конец файла)
+	
+	if (f == NULL) {
+		lr_error_message("Не удалось открыть файл для записи.");
+		return -1;
+	}
+	
+	fprintf(f, "%s,%s\n", 
+	    lr_eval_string("{user_gen}"),
+	    lr_eval_string("{pass_gen}")
+	);
+	
+	fclose(f);
 	
 	lr_start_transaction("UC02_TR07_logout");
 	

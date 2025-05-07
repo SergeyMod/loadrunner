@@ -15,7 +15,7 @@ UC04_select_random()
 	"TargetFrame=", 
 	"Resource=0", 
 	"RecContentType=text/html", 
-	"Referer=http://{host}:{port}/tickets/?sortx=created&status=1&status=2&date_from=&date_to=&q=", 
+	"Referer=http://{host}:{port}/tickets/?sortx=created&status=1&date_from=&date_to=&q=", 
 	"Snapshot=t13.inf", 
 	"Mode=HTML", 
 	LAST);
