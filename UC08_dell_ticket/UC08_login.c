@@ -29,7 +29,7 @@ UC08_login()
 	{
 		lr_end_transaction("UC08_TR02_login", LR_FAIL);
 		lr_error_message("Пользователь не авторизован");
-		lr_exit(LR_EXIT_ITERATION_AND_CONTINUE, LR_AUTO);
+		lr_exit(LR_EXIT_ITERATION_AND_CONTINUE, LR_FAIL);
 		return 0;
 	}
 	
