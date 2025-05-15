@@ -4,9 +4,10 @@ UC03_login()
 	web_add_header("Origin", 
 		"http://{host}:{port}");
 	
+	lr_think_time(3);
 	
 	lr_start_transaction("UC03_TR02_login");
-
+	
 	web_reg_find("Text=logout","SaveCount=count",LAST);
 
 	web_submit_data("UC03_TR02_login", 

@@ -4,6 +4,7 @@ UC01_login()
 	web_add_header("Origin", 
 		"http://{host}:{port}");
 	
+	lr_think_time(3);
 	
 	lr_start_transaction("UC01_TR02_login");
 

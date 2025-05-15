@@ -3,7 +3,6 @@ UC02_home_page()
 	web_add_auto_header("Upgrade-Insecure-Requests", 
 		"1");
 
-	
 	web_reg_save_param_attrib(
 		"ParamName=csrfmiddlewaretoken",
 		"TagName=input",

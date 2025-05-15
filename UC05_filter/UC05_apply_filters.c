@@ -1,8 +1,7 @@
 UC05_apply_filters()
 {
 
-
-	lr_think_time(22);
+	lr_think_time(3);
 	
 	lr_start_transaction("UC05_TR03_apply_filters");
 
@@ -13,31 +12,11 @@ UC05_apply_filters()
 			"Name=csrfmiddlewaretoken",
 			"Type=hidden",
 			LAST);
-// ошибка с памятью
-/*Correlation comment - Do not change!  Original value='eyJmaWx0ZXJpbmciOiB7InN0YXR1c19faW4iOiBbMSwgMl19LCAiZmlsdGVyaW5nX29yIjogeyJzdGF0dXNfX2luIjogWzEsIDJdfSwgInNvcnRpbmciOiAiY3JlYXRlZCIsICJzb3J0cmV2ZXJzZSI6IG51bGwsICJzZWFyY2hfc3RyaW5nIjogIiJ9' Name ='query_encoded' Type ='ResponseBased'*/
-//	web_reg_save_param_attrib(
-//		"ParamName=query_encoded",
-//		"TagName=input",
-//		"Extract=value",
-//		"Name=query_encoded",
-//		"Type=hidden",
-//		SEARCH_FILTERS,
-//		"IgnoreRedirections=No",
-//		LAST);
 
-
-// не находит
-//	web_reg_save_param_regexp( 
-//		"ParamName=query_encoded",
-//		"RegExp=query_encoded(.*)>",
-//		"SEARCH_FILTERS",
-//		"Scope=Body",
-////		"IgnoreRedirections=No",
-//		"RequestUrl=*/nav.pl*",
-//		LAST);
-
-	lr_save_string("eyJmaWx0ZXJpbmciOiB7InN0YXR1c19faW4iOiBbMSwgMl19LCAiZmlsdGVyaW5nX29yIjogeyJzdGF0dXNfX2luIjogWzEsIDJdfSwgInNvcnRpbmciOiAiY3JlYXRlZCIsICJzb3J0cmV2ZXJzZSI6IG51bGwsICJzZWFyY2hfc3RyaW5nIjogIiJ9",
-               "query_encoded");
+	web_reg_save_param_regexp( 
+		"ParamName=query_encoded",
+		"RegExp=query_encoded\' value=\'(.*)\'\/>",
+		LAST);
 
 	web_url("UC05_TR03_apply_filters_1", 
 		"URL=http://{host}:{port}/tickets/?sortx=created&status=1&date_from=&date_to=&q=", 

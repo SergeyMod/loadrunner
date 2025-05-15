@@ -1,6 +1,7 @@
 UC07_update_ticket()
 {
-
+	
+	lr_think_time(3);
 	
 	lr_start_transaction("UC07_TR05_update_ticket");
 	

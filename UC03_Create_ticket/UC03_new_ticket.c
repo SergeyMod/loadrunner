@@ -15,8 +15,11 @@ UC03_new_ticket()
 		"NotFound=warning",
 		LAST);
 	
+	lr_think_time(3);
 	
-	web_url("tickets", 
+	lr_start_transaction("UC03_TR03_new_ticket");
+	
+	web_url("UC03_TR03_new_ticket", 
 		"URL=http://{host}:{port}/tickets/submit/", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -25,6 +28,8 @@ UC03_new_ticket()
 		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		LAST);
+	
+	lr_end_transaction("UC03_TR03_new_ticket", LR_AUTO);
 	
 	return 0;
 }

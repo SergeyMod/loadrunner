@@ -1,8 +1,11 @@
 UC03_submit_ticket()
 {
 
+	lr_think_time(3);
+	
+	lr_start_transaction("UC03_TR04_submit_ticket");
 
-	web_submit_data("submit", 
+	web_submit_data("UC03_TR04_submit_ticket", 
 		"Action=http://{host}:{port}/tickets/submit/", 
 		"Method=POST", 
 		"EncType=multipart/form-data", 
@@ -23,6 +26,7 @@ UC03_submit_ticket()
 		"Name=assigned_to", "Value={num}", ENDITEM, 
 		LAST);
 
+	lr_end_transaction("UC03_TR04_submit_ticket", LR_AUTO);
 
 	return 0;
 }

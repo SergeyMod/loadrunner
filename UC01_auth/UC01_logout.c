@@ -1,5 +1,6 @@
 UC01_logout()
 {
+	lr_think_time(3);
 	
 	lr_start_transaction("UC01_TR03_logout");
 	

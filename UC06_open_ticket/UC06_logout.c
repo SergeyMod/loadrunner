@@ -1,9 +1,9 @@
 UC06_logout()
 {
 	
-	lr_start_transaction("UC06_TR05_logout");
+	lr_think_time(3);
 	
-	lr_think_time(10);
+	lr_start_transaction("UC06_TR05_logout");
 	
 	web_url("UC06_TR05_logout", 
 		"URL=http://{host}:{port}/logout/", 

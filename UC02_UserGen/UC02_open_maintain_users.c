@@ -1,7 +1,7 @@
 UC02_open_maintain_users()
 {
 
-	lr_think_time(10);
+	lr_think_time(3);
 
 	lr_start_transaction("UC02_TR04_open_maintain_users");
 

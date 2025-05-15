@@ -16,6 +16,7 @@ UC05_save_query()
 		
 		web_reg_find("Text={RandomName}","SaveCount=count_query",LAST);
 		
+		lr_think_time(3);
 		
 		lr_start_transaction("UC05_TR04_save_query");
 		

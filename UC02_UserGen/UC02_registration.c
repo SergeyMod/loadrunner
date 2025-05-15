@@ -1,9 +1,9 @@
 UC02_registration()
 {
+	
+	lr_think_time(3);
 
 	lr_start_transaction("UC02_TR06_registration");
-	
-	lr_think_time(10);
 	
 	web_reg_save_param_attrib(
 		"ParamName=csrfmiddlewaretoken",
@@ -18,8 +18,6 @@ UC02_registration()
 		"RegExp=/admin/auth/user/(.*)/change/\">{user_gen}</a>",
 		"NotFound=warning",
 		LAST);
-	
-	lr_think_time(10);
 
 	web_submit_data("UC02_TR06_registration", 
 		"Action=http://{host}:{port}/admin/auth/user/add/", 
@@ -43,7 +41,7 @@ UC02_registration()
 		"Url=/static/admin/img/icon-calendar.svg", "Referer=http://{host}:{port}/static/admin/css/widgets.css", ENDITEM, 
 		LAST);
 	
-	lr_think_time(10);
+	lr_think_time(3);
 
 	web_submit_data("UC02_TR06_registration_change", 
 		"Action=http://{host}:{port}/admin/auth/user/{num}/change/", 
