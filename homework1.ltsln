@@ -63,7 +63,7 @@ Project("D25A6473-6BA6-421B-B2B5-440098291EE8") = "UC08_dell_ticket", "UC08_dell
 		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XGxvYWRydW5uZXJcVUMwOF9kZWxsX3RpY2tldFxVQzA4X2RlbGxfdGlja2V0LnVzcjwvTG9hZERhdGE+DQogIDxGaWxlcz4NCiAgICA8RmlsZT5EOlxsb2FkcnVubmVyXFVDMDhfZGVsbF90aWNrZXRcVUMwOF9kZWxsX3RpY2tldC51c3I8L0ZpbGU+DQogIDwvRmlsZXM+DQogIDxNb2RpZmllZD4yMDI1LTA1LTA2VDE2OjEyOjIxLjc4ODk1MiswNTowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+
 	EndProjectSection
 	ProjectSection(ExpandInVugen) = Data
-		Value = True
+		Value = False
 	EndProjectSection
 EndProject
 Global
