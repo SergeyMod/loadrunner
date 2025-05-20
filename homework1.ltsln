@@ -7,7 +7,7 @@ Project("A14F42CB-EBA3-40DC-BF20-322F5B3E748E") = "UC01_auth", "UC01_auth\UC01_a
 		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XGxvYWRydW5uZXJcVUMwMV9hdXRoXFVDMDFfYXV0aC51c3I8L0xvYWREYXRhPg0KICA8RmlsZXM+DQogICAgPEZpbGU+VUMwMV9hdXRoLnVzcjwvRmlsZT4NCiAgPC9GaWxlcz4NCiAgPE1vZGlmaWVkPjIwMjUtMDUtMTVUMTM6MzI6MTMuMjMxNTc3OSswNTowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+AAAAAAAAAAAAAAAAAAAAAAAAAA__
 	EndProjectSection
 	ProjectSection(ExpandInVugen) = Data
-		Value = True
+		Value = False
 	EndProjectSection
 EndProject
 Project("319B174D-DE52-4893-8A01-52C89F850963") = "UC02_UserGen", "UC02_UserGen\UC02_UserGen.usr", "319B174D-DE52-4893-8A01-52C89F850963"
@@ -15,7 +15,7 @@ Project("319B174D-DE52-4893-8A01-52C89F850963") = "UC02_UserGen", "UC02_UserGen\
 		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XGxvYWRydW5uZXJcVUMwMl9Vc2VyR2VuXFVDMDJfVXNlckdlbi51c3I8L0xvYWREYXRhPg0KICA8RmlsZXM+DQogICAgPEZpbGU+VUMwMl9Vc2VyR2VuLnVzcjwvRmlsZT4NCiAgPC9GaWxlcz4NCiAgPE1vZGlmaWVkPjIwMjUtMDQtMjhUMTM6MDM6MjEuMDc4MjIzMiswNTowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+AAAAAAAAAAAAAA__
 	EndProjectSection
 	ProjectSection(ExpandInVugen) = Data
-		Value = True
+		Value = False
 	EndProjectSection
 EndProject
 Project("9C408814-00B6-409A-B5A2-9FBC9B77093D") = "UC03_Create_ticket", "UC03_Create_ticket\UC03_Create_ticket.usr", "9C408814-00B6-409A-B5A2-9FBC9B77093D"
@@ -63,7 +63,7 @@ Project("D25A6473-6BA6-421B-B2B5-440098291EE8") = "UC08_dell_ticket", "UC08_dell
 		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XGxvYWRydW5uZXJcVUMwOF9kZWxsX3RpY2tldFxVQzA4X2RlbGxfdGlja2V0LnVzcjwvTG9hZERhdGE+DQogIDxGaWxlcz4NCiAgICA8RmlsZT5EOlxsb2FkcnVubmVyXFVDMDhfZGVsbF90aWNrZXRcVUMwOF9kZWxsX3RpY2tldC51c3I8L0ZpbGU+DQogIDwvRmlsZXM+DQogIDxNb2RpZmllZD4yMDI1LTA1LTA2VDE2OjEyOjIxLjc4ODk1MiswNTowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+
 	EndProjectSection
 	ProjectSection(ExpandInVugen) = Data
-		Value = False
+		Value = True
 	EndProjectSection
 EndProject
 Global
