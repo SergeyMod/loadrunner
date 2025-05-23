@@ -15,8 +15,6 @@ UC03_new_ticket()
 		"NotFound=warning",
 		LAST);
 	
-	lr_think_time(3);
-	
 	lr_start_transaction("UC03_TR03_new_ticket");
 	
 	web_url("UC03_TR03_new_ticket", 

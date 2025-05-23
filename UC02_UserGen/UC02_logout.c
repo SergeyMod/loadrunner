@@ -15,8 +15,6 @@ UC02_logout()
 	
 	fclose(f);
 	
-	lr_think_time(3);
-	
 	lr_start_transaction("UC02_TR07_logout");
 	
 	web_url("UC02_TR07_logout", 

@@ -1,7 +1,5 @@
 UC06_chenge_assigned()
 {
-	lr_think_time(3);
-	
 	if(atoi(lr_eval_string("{count_unassigned}"))!=0)
 	{
 		

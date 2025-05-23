@@ -31,8 +31,6 @@ UC08_duplicate_filter()
 		"Snapshot=t2.inf", 
 		"Mode=HTML", 
 		LAST);
-
-	lr_think_time(3);
 	
 	web_reg_save_param_attrib(
 		"ParamName=csrfmiddlewaretoken",
@@ -58,8 +56,6 @@ UC08_duplicate_filter()
 		"Snapshot=t4.inf", 
 		"Mode=HTML", 
 		LAST);
-	
-	lr_think_time(6);
 	
 	web_reg_save_param_json(
 		"ParamName=tickets",

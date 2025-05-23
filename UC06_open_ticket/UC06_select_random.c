@@ -31,8 +31,6 @@ UC06_select_random()
 	
 	lr_save_string(lr_eval_string(text), "num");
 	
-	lr_think_time(3);
-	
 	web_reg_find("Text=Unassigned","SaveCount=count_unassigned",LAST);
 	
 	lr_start_transaction("UC06_TR03_select_random");

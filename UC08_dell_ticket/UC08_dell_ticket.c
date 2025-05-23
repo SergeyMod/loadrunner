@@ -21,7 +21,7 @@ UC08_dell_ticket()
 		ITEMDATA, 
 		"Name=csrfmiddlewaretoken", "Value={csrfmiddlewaretoken}", ENDITEM, 
 		"Name=ticketTable_length", "Value=25", ENDITEM, 
-		"Name=ticket_id", "Value={tickets_1}", ENDITEM, 
+		"Name=ticket_id", "Value={randomIndex}", ENDITEM, 
 		"Name=action", "Value=delete", ENDITEM, 
 		LAST);
 

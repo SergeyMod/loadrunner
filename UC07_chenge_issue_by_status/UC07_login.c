@@ -27,10 +27,9 @@ UC07_login()
 	
 	if(atoi(lr_eval_string("{count}"))==0)
 	{
-		lr_end_transaction("UC07_TR02_login", LR_FAIL);
+		lr_end_transaction("UC05_TR02_login", LR_FAIL);
 		lr_error_message("Пользователь не авторизован");
-		lr_exit(LR_EXIT_ITERATION_AND_CONTINUE, LR_FAIL);
-		return 0;
+        lr_abort();  // Прерывает выполнение скрипта
 	}
 	
 	lr_end_transaction("UC07_TR02_login", LR_AUTO);

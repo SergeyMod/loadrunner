@@ -6,8 +6,6 @@ UC04_select_random()
 	
 	lr_save_string(lr_eval_string(text), "num");
 	
-	lr_think_time(3);
-	
 	lr_start_transaction("UC04_TR04_select_random");
 
 	web_url("UC04_TR04_select_random", 

@@ -1,8 +1,6 @@
 UC03_logout()
 {
 	
-	lr_think_time(3);
-	
 	lr_start_transaction("UC03_TR05_logout");
 	
 	web_url("UC03_TR05_logout", 

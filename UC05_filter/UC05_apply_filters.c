@@ -1,7 +1,5 @@
 UC05_apply_filters()
 {
-
-	lr_think_time(3);
 	
 	lr_start_transaction("UC05_TR03_apply_filters");
 

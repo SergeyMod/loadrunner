@@ -75,8 +75,8 @@ Order="UC06_TR01_home_page__*delimiter*__UC06_TR02_login__*delimiter*__UC06_TR03
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
-LastReplayedRunName=result1
-ActiveRunName=result1
+LastReplayedRunName=
+ActiveRunName=
 [ImportedAction]
 UC06_home_page=
 UC06_login=

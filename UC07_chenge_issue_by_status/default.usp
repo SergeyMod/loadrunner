@@ -1,7 +1,7 @@
 [Profile Actions]
 MercIniTreeFather=""
 MercIniTreeSectionName="Profile Actions"
-Profile Actions name=vuser_init,UC07_home_page,UC07_login,UC07_select_random,UC07_update_ticket,UC07_logout,vuser_end
+Profile Actions name=vuser_init,UC07_home_page,UC07_login,UC07_get_data_ticket,UC07_random_num,UC07_select_random,UC07_update_ticket,UC07_logout,vuser_end
 [RunLogicEndRoot]
 MercIniTreeFather=""
 MercIniTreeSectionName="RunLogicEndRoot"
@@ -53,13 +53,19 @@ RunLogicObjectKind="Action"
 [RunLogicRunRoot]
 MercIniTreeFather=""
 MercIniTreeSectionName="RunLogicRunRoot"
-MercIniTreeSons="UC07_update_ticket,UC07_home_page,UC07_login,UC07_select_random,UC07_logout"
+MercIniTreeSons="UC07_home_page,UC07_login,UC07_get_data_ticket,UC07_random_num,UC07_select_random,UC07_update_ticket,UC07_logout"
 Name="Run"
-RunLogicActionOrder="UC07_home_page,UC07_login,UC07_select_random,UC07_update_ticket,UC07_logout"
+RunLogicActionOrder="UC07_home_page,UC07_login,UC07_get_data_ticket,UC07_random_num,UC07_select_random,UC07_update_ticket,UC07_logout"
 RunLogicActionType="VuserRun"
 RunLogicNumOfIterations="1"
 RunLogicObjectKind="Group"
 RunLogicRunMode="Sequential"
+[RunLogicRunRoot:UC07_get_data_ticket]
+MercIniTreeFather="RunLogicRunRoot"
+MercIniTreeSectionName="UC07_get_data_ticket"
+Name="UC07_get_data_ticket"
+RunLogicActionType="VuserRun"
+RunLogicObjectKind="Action"
 [RunLogicRunRoot:UC07_home_page]
 MercIniTreeFather="RunLogicRunRoot"
 MercIniTreeSectionName="UC07_home_page"
@@ -76,6 +82,12 @@ RunLogicObjectKind="Action"
 MercIniTreeFather="RunLogicRunRoot"
 MercIniTreeSectionName="UC07_logout"
 Name="UC07_logout"
+RunLogicActionType="VuserRun"
+RunLogicObjectKind="Action"
+[RunLogicRunRoot:UC07_random_num]
+MercIniTreeFather="RunLogicRunRoot"
+MercIniTreeSectionName="UC07_random_num"
+Name="UC07_random_num"
 RunLogicActionType="VuserRun"
 RunLogicObjectKind="Action"
 [RunLogicRunRoot:UC07_select_random]

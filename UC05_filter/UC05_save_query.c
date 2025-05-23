@@ -38,13 +38,8 @@ UC05_save_query()
 		{
 			lr_end_transaction("UC05_TR04_save_query", LR_FAIL);
 			lr_error_message("Не сохранено");
-			lr_exit(LR_EXIT_ITERATION_AND_CONTINUE, LR_AUTO);
-			return 0;
+        	lr_abort();  // Прерывает выполнение скрипта
 		}
-		
-		
-		web_add_header("X-Requested-With", 
-			"XMLHttpRequest");
 		
 		web_url("UC05_TR04_save_query_2",
 		"URL=http://{host}:{port}/datatables_ticket_list/{query_encoded}?draw=1&columns%5B0%5D%5Bdata%5D=id&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=false&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=ticket&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=priority&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=queue&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=status&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%"
@@ -61,9 +56,6 @@ UC05_save_query()
 		lr_end_transaction("UC05_TR04_save_query", LR_AUTO);
 		
 	}
-	
-	
-
 
 	return 0;
 }

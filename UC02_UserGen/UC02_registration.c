@@ -33,12 +33,6 @@ UC02_registration()
 		"Name=password1", "Value={pass_gen}", ENDITEM, 
 		"Name=password2", "Value={pass_gen}", ENDITEM, 
 		"Name=_save", "Value=Save", ENDITEM, 
-		EXTRARES, 
-		"Url=/static/admin/img/selector-icons.svg", "Referer=http://{host}:{port}/static/admin/css/widgets.css", ENDITEM, 
-		"Url=/static/admin/img/icon-unknown.svg", "Referer=http://{host}:{port}/static/admin/css/widgets.css", ENDITEM, 
-		"Url=/static/admin/img/icon-unknown-alt.svg", "Referer=http://{host}:{port}/static/admin/css/widgets.css", ENDITEM, 
-		"Url=/static/admin/img/icon-clock.svg", "Referer=http://{host}:{port}/static/admin/css/widgets.css", ENDITEM, 
-		"Url=/static/admin/img/icon-calendar.svg", "Referer=http://{host}:{port}/static/admin/css/widgets.css", ENDITEM, 
 		LAST);
 	
 	lr_think_time(3);
